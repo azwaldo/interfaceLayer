@@ -1,0 +1,205 @@
+/*  v043 - - Implement block_element-modifier (BEM) naming practice!  */
+/*************************** Specificity: Baseline content styles for extension */
+.ui-dialog, .ui-widget, .ui-widget-content, .ui-corner-all, .ui-front, .ui-draggable, .ui-resizable { 
+  z-index: 2147483648;
+  position: relative;/* position must accompany z-index */
+  /*color: #777;*/
+  /*font: normal 12pt/14pt sans-serif;*/
+  /*vertical-align: baseline;*/
+  /*text-align: left;*/ }
+
+#alpha.ui-widget-content {
+  background: white url(none);
+  background-color: #FFFFFF; }
+.mentorsonline {
+  color: #777;
+  font: normal 12pt/14pt sans-serif;
+  vertical-align: baseline;
+  text-align: left; }
+/****************************************************** BEYOND HERE LAY DRAGONS */
+/******************************************* BEYOND HERE LAY DRAGONS */
+#alpha .ui-widget-header {
+  border: 1px solid #0000B7;
+  background: #5252FF url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x;
+  color: #ffffff;
+  font-weight: bold; }
+/******************************************* BEYOND HERE LAY DRAGONS */
+/******************************** BEYOND HERE LAY DRAGONS */
+
+/* //////////  REVISE TWO OLD STYLE DECLARATIONS 
+.ui-dialog-buttonset {
+  height: auto; }
+.ui-dialog .ui-dialog-buttonpane {
+  margin-top: 0em;
+  padding: 0 0;
+  background-color: #efefef; }
+///////////////////////////////////////////// */
+
+/*.ui-dialog-titlebar-close {
+  visibility: hidden; }*/
+/*.ui-button-icon-only, .ui-icon {
+  top: 0;
+  left: 0; }*/
+/*************************************  Page structure */
+#mo_btn_alpha, #mo_btn_beta, #mo_btn_gamma, #mo_btn_delta, #mo_btn_chi {
+  z-index: 2147483648;
+  position:fixed;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: 1s;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 10px #333; }
+#mo_btn_alpha {
+  background-color: red;
+  background-image: url("https://www.azwaldo.com/media/temp/mo_ext_btn_files_48.png");
+  width:48px;
+  height:48px;
+  right:124px;
+  bottom:388px; }
+#mo_btn_beta {
+  background-color: green;
+  background-image: url("https://www.azwaldo.com/media/temp/mo_ext_btn_bookmark_48.png");
+  width:48px;
+  height:48px;
+  right:124px;
+  bottom:328px; }
+#mo_btn_gamma {
+  background-color: blue;
+  background-image: url("https://www.azwaldo.com/media/temp/mo_ext_btn_canvas_48.png");
+  width:48px;
+  height:48px;
+  right:124px;
+  bottom:268px; }
+#mo_btn_delta {
+  background-color: #FF8000;
+  background-image: url("https://www.azwaldo.com/media/temp/mo_ext_btn_home_48.png");
+  width:48px;
+  height:48px;
+  right:124px;
+  bottom:208px; }
+#mo_btn_chi {
+  background-color: #888;
+  width:96px;
+  height:96px;
+  right:100px;
+  bottom:100px; }
+#beta {
+  font-size: 16px;
+  font-weight:normal;
+  text-align: left;  }
+#beta H2 {
+  font-size: 18px;
+  font-weight:bold;  }
+#mo-bk-url-div {
+  font-family: "Consolas", "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 16px 0 0 0; }
+#gamma {
+  text-align: left; }
+/* unvisited link */
+/* Chat Dialog */
+#chi {
+  position: relative;
+  bottom: 0;
+  background-color: #efefef;
+  padding: 2px 0;
+  text-align: left; }
+#chi #input-chat {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  min-height: 1.0rem;
+  width: 100%;
+  margin-bottom: 0;
+  overflow: auto;
+  resize: none;
+  padding: 0px 4px; }
+#messages-div {
+  background-color: #fff;
+  height: 88%;/*Setting height allows scroll bar in this div*/
+  padding: 0px 6px;
+  overflow: auto; }
+#messages-div li {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0px 2px; }
+#messages-div li:nth-child(odd) {
+  background-color: #eee; }
+#chat-send-button {
+  padding: 0px 6px;
+  margin-bottom: 0;  }
+/*************************************  Navigation */
+#mo_btn_alpha:hover, #mo_btn_beta:hover, #mo_btn_gamma:hover, 
+#mo_btn_delta:hover, #mo_btn_chi:hover {
+    opacity: 1;
+    cursor: pointer; }
+#mo_btn_chi:active {
+    color:#CBE86B; }
+/*#mo_btn_chi.inactive {
+    background-color: #F2E9E1; }*/
+#gamma a:link, #alpha a:link {
+  color: #5141FF;
+  font-weight: bold; }
+#gamma a:visited, #alpha a:visited {
+  color: #7669FF; }
+#gamma a:hover, #alpha a:hover {
+  color: #0000FF;
+  text-decoration: underline; }
+#gamma a:active, #alpha a:active {
+    color: #0000FF; }
+#gamma dd, #alpha dd {
+  margin-bottom: 1.0rem; }
+/*************************************  Headings */
+.mentorsonline H1 {
+  font: bold 18pt/24pt sans-serif; }
+.mentorsonline H3 {
+  font: bold 16pt/18pt sans-serif; }
+/*************************************  Tables & Def Lists */
+.mentorsonline dt {
+  margin-bottom: 0.5rem;  }
+.mentorsonline dd {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;  }
+span.mo-linknotes {
+  padding-top: 0.75rem;
+  font: bold italic 82.5% Georgia, serif;  }  
+/*************************************  Forms */
+.mentorsonline input[type="text"] {
+  width: 95%;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: scroll;
+  margin-bottom: 0;
+  padding: 2px 4px;  }
+div.mentorsonline button {
+  /*used only in Bookmarking dialog?*/
+  /*color: red;*//*#444;*/
+  background-color: transparent;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  padding: 2px 4px;
+  border: 2px solid #777;
+  margin: 12px 0 0 0;  }
+/******************************** skeleton override */
+.ui-dialog .ui-dialog-buttonpane button {
+  padding: 0 0.4rem 0 0.4rem;
+  margin: 0 0.4rem 0 0; }
+.ui-dialog-buttonpane .ui-widget-content .ui-helper-clearfix {
+  padding: 0 0.4rem 0 0.4rem;
+  margin-top: 0; }
+/*.bookmark-input button:hover {
+  background-color: #ccc; }*/
+/*************************************  Footer */
+/*************************************  Responsive */
+/*************************************/
+/*.ui-widget button {
+  font-size: 0.825em;
+  height: 1.5em;
+  line-height: 1em;
+  padding: 0px 6px;
+  margin-bottom: 0; span.ui-button-text-only, span.ui-button-text {
+  font: bold 14px Arial, sans-serif; }

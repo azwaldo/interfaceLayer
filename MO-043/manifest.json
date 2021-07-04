@@ -1,0 +1,28 @@
+{
+  "name": "M0 v0.43.00",
+  "version": "0.4.3",
+  "description": "Revising Lesson request, clean up styles, revised canvas API",
+  "background": {
+		"scripts": ["background.js"]
+	},
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.1.4.min.js", "jquery-ui.min.js", "content.js" ],
+    "css": [ "jquery-ui.css", "jquery-ui.structure.min.css", "jquery-ui.theme.min.css", "extension.css"],
+    "matches": [ "http://*/*", "https://*/*"],
+		"run_at": "document_end"
+  }],
+	"web_accessible_resources": [
+		"images/*.png"
+	],
+	"permissions": [
+    "http://*/",
+		"storage"
+  ],
+	"externally_connectable": {
+		"matches": ["*://*.azwaldo.com/*"]
+	}
+}
