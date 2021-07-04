@@ -1,0 +1,68 @@
+README_MO-043 MentorsOnline Browser Extension 
+From V0.44 "The Chopper" - the last working version in 2016
+Building a stripped down version of theTool, repurposed for collaboration
+------------------------------------------------------------------------
+  Button					Function
+	------					--------
+	alpha (red)			Current lesson
+	beta  (green)		Bookmarking feature; scrape page content, sort
+	gamma (blue)		LMS Integration
+	beta  (orange)  Go to homepage
+	chi   (gray)		Chat
+------------------------------------------------------------------------
+MAJOR FEATURES: TBD
+--------
+MAJOR CHANGES
+A. HOST ACCOUNT CLOSED (Simulating UI/UX features w/screenshot) 
+B. Implemented init fxn, 
+C. Implemented use of chrome.local.storage to pass vars across domains
+D. Added UI element: Home button (mentor assigns homepage URL) 
+E. Assigned high z-index to UI elements (extension.css)<-See ISSUES[3]
+--------
+ISSUES - HOST ACCOUNT CLOSED (Simulating UI/UX features w/screenshot) 
+1. widgets get lost on Twitter scroll (also on page reload?)
+2. cross-tab messaging for persistent Config State of UI 
+    Lesson/Unit content, 
+    last DIVs open, 
+    localStorage chrome.storage “content scripts can directly access 
+    user data without the need for a background page”
+3. Optimization
+    request (.load) modal content on launch of extension?
+    When to cache?
+4. extension. sprite image files not loading (for close button): 
+    "Failed to load resource: the server responded with a status of 
+    404 (Not Found)"
+Referring to files bg images info at developer.chrome.com 
+5. Updating Mentor Status and Notifications data - many user actions can 
+    prompt a server request for updates; but, does this increase bandwidth 
+    substantially, unnecessarily?
+6. Tracking the User
+    User time on task -
+    Does a student’s performance on an end-of-Unit vocab quiz correlate 
+        to their total time in “session”?
+    Can we display for the teacher the average time per link, per lesson, 
+        spent by each user?
+    Store data in client pending exit, other major event to minimize 
+        server requests? 
+7. Monitoring the System - observe the time needed for a behaviour 
+    to occur; for example:
+        Average Response time to HTTP Requests
+------------------------------------------------------------------------
+Backburner
+Mentor's Dashboard 
+    Add form to change homepage URL
+    Add form to change pass key
+Bookmarking: Possible features
+    option: "Open in Dashboard" (send scraped info as params)
+    option: add to lesson (drop-down list of teacher's lessons) 
+    option: add to unit (drop-down list of teacher's units)
+    option: create announcement on 'save' 
+    option: post to chat room (as announcement) instead of SAVE ("In class, we discussed XYZ, here is a page…")
+    option: if both desc and og:desc found, "Alternate Description Available" (checkbox? radio btn?)
+    db entry to also include:
+        submitted by:
+        date submitted:
+Design for homeschooling
+Teacher option to disable chat for any student (from Jason Teel)
+Lesson sharing  (import to my class, allow import)
+Invite mentors to Canvas class (multiple mentors)
