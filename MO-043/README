@@ -4,10 +4,10 @@ Building a stripped down version of theTool, repurposed for collaboration
 ------------------------------------------------------------------------
   Button					Function
 	------					--------
-	alpha (red)			Current lesson
+	alpha (red)		Current lesson
 	beta  (green)		Bookmarking feature; scrape page content, sort
 	gamma (blue)		LMS Integration
-	beta  (orange)  Go to homepage
+	beta  (orange)  	Go to homepage
 	chi   (gray)		Chat
 ------------------------------------------------------------------------
 MAJOR FEATURES: TBD
@@ -53,16 +53,13 @@ Mentor's Dashboard
     Add form to change homepage URL
     Add form to change pass key
 Bookmarking: Possible features
-    option: "Open in Dashboard" (send scraped info as params)
-    option: add to lesson (drop-down list of teacher's lessons) 
-    option: add to unit (drop-down list of teacher's units)
-    option: create announcement on 'save' 
-    option: post to chat room (as announcement) instead of SAVE ("In class, we discussed XYZ, here is a page…")
-    option: if both desc and og:desc found, "Alternate Description Available" (checkbox? radio btn?)
-    db entry to also include:
-        submitted by:
-        date submitted:
-Design for homeschooling
+  - Open terms in Dashboard (send scraped info as params)
+  - add to lesson (drop-down list of teacher's lessons) 
+  - add to unit (drop-down list of teacher's units)
+  - create announcement on 'save' 
+  - post to chat room (as announcement) instead of SAVE ("In class, we discussed XYZ, here is a page…")
+  - if both desc and og:desc found, "Alternate Description Available" (checkbox? radio btn?)
+Design considerations for homeschooling (Parent as teacher, parent joins content community)
 Teacher option to disable chat for any student (from Jason Teel)
 Lesson sharing  (import to my class, allow import)
 Invite mentors to Canvas class (multiple mentors)
