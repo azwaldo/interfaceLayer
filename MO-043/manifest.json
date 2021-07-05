@@ -1,7 +1,7 @@
 {
-  "name": "M0 v0.43.00",
-  "version": "0.4.3",
-  "description": "Revising Lesson request, clean up styles, revised canvas API",
+  "name": "interfaceLayer-043",
+  "version": "0.43",
+  "description": "Stripped down for LTI noodling",
   "background": {
 		"scripts": ["background.js"]
 	},
@@ -23,6 +23,6 @@
 		"storage"
   ],
 	"externally_connectable": {
-		"matches": ["*://*.azwaldo.com/*"]
+		"matches": [""]
 	}
 }
