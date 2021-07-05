@@ -519,7 +519,7 @@ function openBookmarkDialog(id) {
 		$( "#beta" ).dialog({
 			width: 600,
 			height: 450,
-			title: "Bookmarking Tool", //will set dialog title
+			title: "Bookmarking <=> Annotation", //will set dialog title
 			position: {
 				"my": "left top",
 				"at": "left+50 top+50",
